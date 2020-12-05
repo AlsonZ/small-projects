@@ -27,7 +27,11 @@ body {
   position: relative;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   border: 1px solid rgb(243, 243, 243);
-  background-image: url(./images/expanding-cards-square.PNG);
+}
+
+.expanding-cards {
+  /* background-image: url(./images/expanding-cards-square.PNG); */
+  background-image: url(./images/expanding-cards.PNG);
 }
