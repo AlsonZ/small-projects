@@ -6,21 +6,28 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.container {
+.title-container {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
   height: 100%;
   max-width: 100%;
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
-  grid-template-rows: 30% 30% 30%;
-  gap: 5px;
+  padding: 0 10% 0 10%;
 }
 
 .card {
-  border: 2px solid rgb(240, 240, 240);
-}
-
-.card img {
-  max-width: 100%;
-  max-height: fit-content;
-  height: auto;
+  width: 30%;
+  padding-bottom: 30%;
+  float: left;
+  margin: 1.5%;
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid rgb(243, 243, 243);
+  background-image: url(./images/expanding-cards-square.PNG);
 }
