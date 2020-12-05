@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expanding Cards</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-container">
+        <form onsubmit="onFormSubmit(event)">
+          <label for="url">Replace currently active image:</label>
+          <input id="url" type="text" placeholder="Image URL" />
+          <input class="btn" type="submit" />
+          <button class="reset-btn btn" onclick="onResetDefault()">
+            Reset to Default
+          </button>
+        </form>
+      </div>
+      <div class="card-container">
+        <div class="card active">
+          <img src="https://picsum.photos/id/1022/800/600" />
+          <p>Image 1</p>
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/id/1035/800/600" />
+          <p>Image 2</p>
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/id/1049/800/600" />
+          <p>Image 3</p>
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/id/1051/800/600" />
+          <p>Image 4</p>
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/id/1004/800/600" />
+          <p>Image 5</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="./index.js"></script>
+</html>

@@ -1,0 +1,103 @@
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  padding-top: 100px;
+}
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input-container input[type="text"] {
+  border: 1px solid lightgray;
+  padding: 5px 10px 5px 10px;
+}
+
+.input-container .btn {
+  padding: 5px 10px 5px 10px;
+  color: white;
+  background: rgb(20, 107, 238);
+  border: none;
+  box-shadow: none;
+  border-radius: 1px;
+}
+.input-container .reset-btn {
+  border: 1px solid lightgray;
+  background: none;
+  color: rgb(20, 107, 238);
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  overflow: hidden;
+  width: 100px;
+  height: 600px;
+  margin: 20px;
+  transition: width 1s ease-in-out;
+  position: relative;
+}
+.card p {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  color: white;
+  margin-left: 30px;
+  font-size: 15px;
+  transition: opacity 1s ease-in-out;
+}
+
+.active {
+  width: 800px;
+}
+
+.active p {
+  opacity: 1;
+}
+
+.card img {
+  flex: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .input-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    margin: 2.5%;
+    align-items: center;
+  }
+  .card {
+    width: 95%;
+    height: 100px;
+    transition: height 1s ease-in-out;
+    margin: 5px 0;
+  }
+  .active {
+    height: 600px;
+  }
+}
