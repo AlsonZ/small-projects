@@ -1,0 +1,45 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+.image {
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(./big-image.jpg);
+  filter: blur(40px);
+}
+.small-image {
+  /* width: 50%; */
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(./tiny-image.jpg);
+  filter: blur(40px);
+}
+
+.load-image {
+  background-image: url(./big-image.jpg);
+  filter: blur(40px);
+  animation: sharpen 1s forwards;
+}
+
+@keyframes sharpen {
+  0% {
+    filter: blur(40px);
+  }
+  100% {
+    filter: none;
+  }
+}
