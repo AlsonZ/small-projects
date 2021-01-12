@@ -1,0 +1,60 @@
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  --item-background: rgb(20, 20, 20);
+  --highlight: rgb(0, 110, 255);
+  --text: white;
+  background: rgb(48, 48, 48);
+  color: var(--text);
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.entry-container {
+  background: rgb(37, 37, 37);
+  padding: 4rem;
+  margin: 1rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.entry-container h1 {
+  color: var(--highlight);
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.entry-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.entry-form input[type="text"],
+.entry-form input[type="password"],
+.entry-form input[type="submit"] {
+  padding: 0.4rem;
+  margin: 0.4rem 0;
+  background: var(--item-background);
+  border: 1px solid var(--item-background);
+  color: var(--text);
+  border-radius: 3px;
+}
+.entry-form input[type="submit"] {
+  background: var(--highlight);
+  border: 1px solid var(--highlight);
+}
+
+.entry-container a {
+  color: var(--highlight);
+  font-size: 0.9rem;
+  text-decoration: none;
+  margin: 3px 0;
+}

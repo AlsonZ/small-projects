@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./login.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="entry-container">
+        <h1>Login</h1>
+        <form onsubmit="handleLogin(event)" class="entry-form">
+          <label for="username">Username</label>
+          <input
+            id="username"
+            type="text"
+            name="username"
+            placeholder="Username"
+          />
+          <label for="password">Password</label>
+          <input
+            id="password"
+            type="password"
+            name="password"
+            placeholder="Password"
+          />
+          <input type="submit" value="Login" />
+        </form>
+        <a href="./forgotPassword">Forgot Password?</a>
+        <a href="./register">Dont have an Account? Register Here!</a>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="./login.js"></script>
+</html>
